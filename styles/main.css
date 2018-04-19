@@ -1,0 +1,28 @@
+html {
+	background: url()no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	
+}
+
+ #map {
+ 	height: 700px;
+    width: 100%;
+    background-color: #ccc;
+       }
+    #button {
+    	background-color: green;
+    	height: 20px;
+    	width: 30px;
+    }
+    #box {
+    	height: 20px;
+    	width: 130px;
+    	background-color: #ccc;
+    }
+    #box2 {
+    	height: 20px;
+    	width: 130px;
+    	background-color: #ccc;
+    }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Week 6</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<style>
+		#map{
+			height: 700px;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<h3>It's the Map</h3>
+    <input type="number" id="box">
+    <input type="number" id="box2">
+    <input type="button" id="button">
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 36.2429, lng: -86.7385};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          icon: "images/map.png"
+        });
+      }
+  </script>
+  <script>
+      $('button').click(function(){
+        var uluru = {lat: $('box').val , lng: $('box2').val };
+      }
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlJuU6kMXMQDpX1l3ANsDetvcKcpCOgRU&callback=initMap">
+    </script>
+
+	<script src="scripts/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+</html>
